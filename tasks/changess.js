@@ -11,12 +11,11 @@ module.exports=function(grunt){
         if (!grunt.file.exists(filepath))
           grunt.log.warn('Source file "' + filepath + '" not found.');
         else {
-          //grunt.log.writeln(filepath);
           contents.push(grunt.file.read(filepath));
         }
       });
       grunt.file.write(f.dest,interpreter(contents.join(''),{lib:libSheets}));
-      grunt.log.writeln('File ' + f.dest + ' created.');
+      grunt.log.writeln('Changess Files translate to:' + f.dest);
     });
   });
   function readSrcLib(){

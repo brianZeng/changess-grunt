@@ -1,0 +1,21 @@
+/**
+ * Created by Administrator on 2015/3/10.
+ */
+module.exports=function(grunt){
+  grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.initConfig({
+    changess:{
+      text:{
+        src:'demo/text/*.scss',
+        dest:'demo/text/app.css'
+      }
+    },
+    watch:{
+      text:{
+        files:'demo/text/*.scss',
+        tasks:['changess:text']
+      }
+    }
+  })
+};

@@ -1,10 +1,14 @@
 {
   "name": "changess-grunt",
   "version": "0.0.111",
-  "description": "",
+  "description": "grunt tool for changess",
   "files": [
     "tasks"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianZeng/changess-grunt.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,5 +36,9 @@
     "tarball": "http://registry.npmjs.org/changess-grunt/-/changess-grunt-0.0.111.tgz"
   },
   "directories": {},
-  "_resolved": "https://registry.npmjs.org/changess-grunt/-/changess-grunt-0.0.111.tgz"
+  "_resolved": "https://registry.npmjs.org/changess-grunt/-/changess-grunt-0.0.111.tgz",
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5",
+    "grunt": "^0.4.5"
+  }
 }

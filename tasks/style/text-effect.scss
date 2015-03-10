@@ -1,0 +1,31 @@
+@sheetname textEffectLib;
+//https://github.com/ecomfe/est
+@mixin $blur-text($shadow-color:#fff;$radius:0.15em){
+  color:transparent;
+  text-shadow: 0 0 $radius $shadow-color;
+}
+@mixin $glow-text($shadow-color:#fff;$radius:5px){
+  text-shadow: 0 0 $radius $shadow-color;
+}
+@mixin $embossed-text{
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
+}
+@mixin $debossed-text($text-color:#fff;$shadow-color:darken($text-color,5);){
+  color:$text-color;
+  text-shadow: 0 1px 1px $shadow-color, 0 0 0 #000, 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+@mixin $cubic-text($color:#fff;$shadow-color:#d8d8d8){
+  color:$color;
+  text-shadow: 0 1px 0 $shadow-color,
+  0 2px 0 darken($shadow-color,10),
+  0 3px 0 darken($shadow-color,20),
+  0 4px 0 darken($shadow-color,30),
+  0 5px 0 darken($shadow-color,40),
+  0 6px 1px rgba(0, 0, 0, 0.1),
+  0 0 5px rgba(0, 0, 0, 0.1),
+  1px 1px 3px rgba(0, 0, 0, 0.3),
+  3px 3px 5px rgba(0, 0, 0, 0.2),
+  5px 5px 10px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.2),
+  0 20px 20px rgba(0, 0, 0, 0.15);
+}

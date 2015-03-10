@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>app</title>
+    <link href="app.css" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+</div>
+<script>
+    (function(){
+        var p=document.querySelector('.main');
+        ('blur,glow,cubic,embossed,debossed').split(',').forEach(function(name){
+            createEle('p',name+'-text',name);
+        });
+        function createEle(tag,className,innerHTML){
+            var ele=document.createElement(tag);
+            ele.setAttribute('class',className);
+            ele.innerHTML=innerHTML;
+            p.appendChild(ele);
+            return ele;
+        }
+    })()
+</script>
+</body>
+</html>

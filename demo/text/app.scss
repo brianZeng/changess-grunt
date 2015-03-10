@@ -1,0 +1,26 @@
+.blur-text{
+  @include $blur-text -> textEffectLib;
+}
+.cubic-text{
+  @include $cubic-text -> textEffectLib;
+}
+.glow-text{
+  @include $glow-text -> textEffectLib($shadow-color:#EDE31D);
+}
+.embossed-text{
+  color: #0d3349;
+  @include $embossed-text -> textEffectLib;
+}
+.debossed-text{
+  @include $debossed-text -> textEffectLib($text-color:#0d3349);
+}
+.main{
+  p{
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+body{
+  background-color: #2F6FAD;
+  color: #fff;
+}
