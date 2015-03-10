@@ -1,7 +1,7 @@
 var fs=require('fs'),path=require('path');
 
 module.exports=function(grunt){
-  var interpreter=require('./lib/changess'),libSheets=interpreter.parse(readSrcLib());
+  var interpreter=require('./lib/changess.min'),libSheets=interpreter.parse(readSrcLib());
   grunt.registerMultiTask('changess','complie Changess Files to css',function(){
    var opt=this.options({keepEmptyResult:false});
     interpreter.opt.keepEmptyResult=opt.keepEmptyResult;

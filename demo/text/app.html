@@ -11,7 +11,7 @@
 <script>
     (function(){
         var p=document.querySelector('.main');
-        ('blur,glow,cubic,embossed,debossed').split(',').forEach(function(name){
+        ('blur,glow,cubic,embossed,debossed ').split(',').forEach(function(name){
             createEle('p',name+'-text',name);
         });
         function createEle(tag,className,innerHTML){

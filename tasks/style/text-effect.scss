@@ -3,6 +3,9 @@
 @mixin $blur-text($shadow-color:#fff;$radius:0.15em){
   color:transparent;
   text-shadow: 0 0 $radius $shadow-color;
+  & {
+    text-shadow: 0 0 $radius 0.1px $shadow-color;
+  }
 }
 @mixin $glow-text($shadow-color:#fff;$radius:5px){
   text-shadow: 0 0 $radius $shadow-color;
