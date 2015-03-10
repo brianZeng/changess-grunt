@@ -1,0 +1,36 @@
+{
+  "name": "changess-grunt",
+  "version": "0.0.111",
+  "description": "",
+  "files": [
+    "tasks"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "brianZeng",
+    "email": "borian@vip.qq.com"
+  },
+  "license": "ISC",
+  "_id": "changess-grunt@0.0.111",
+  "_shasum": "74e0824df64e2b0830665496d596a89027f845f8",
+  "_from": "changess-grunt@>0.0.12",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "brian_zeng",
+    "email": "borian@vip.qq.com"
+  },
+  "maintainers": [
+    {
+      "name": "brian_zeng",
+      "email": "borian@vip.qq.com"
+    }
+  ],
+  "dist": {
+    "shasum": "74e0824df64e2b0830665496d596a89027f845f8",
+    "tarball": "http://registry.npmjs.org/changess-grunt/-/changess-grunt-0.0.111.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/changess-grunt/-/changess-grunt-0.0.111.tgz"
+}
