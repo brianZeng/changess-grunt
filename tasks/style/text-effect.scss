@@ -4,6 +4,7 @@
   color:transparent;
   text-shadow: 0 0 $radius $shadow-color;
   & {
+    //hank for ie10
     text-shadow: 0 0 $radius 0.1px $shadow-color;
   }
 }
