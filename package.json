@@ -1,6 +1,6 @@
 {
   "name": "changess-grunt",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "grunt tool for changess",
   "files": [
     "tasks"
