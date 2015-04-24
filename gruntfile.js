@@ -8,7 +8,10 @@ module.exports=function(grunt){
     changess:{
       text:{
         src:'demo/text/*.scss',
-        dest:'demo/text/app.css'
+        dest:'demo/text/app.css',
+        options:{
+          compress:true
+        }
       }
     },
     watch:{

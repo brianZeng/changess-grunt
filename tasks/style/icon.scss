@@ -1,0 +1,26 @@
+@sheetname iconLib;
+@mixin $cross($cross-color:#666;$background:#fff;$size:20px;$cross-width:2px;$cross-size:$size * sqrt(2)/2;$hover-color:$cross-color){
+&::after,&::before{
+  content: '';
+  display: inline-block;
+  position: relative;
+  width:$cross-size;
+  height: $cross-size;
+  margin: ($size - $cross-size)/2 - $cross-width/2;
+  border-color: $cross-color;
+  border-style: solid;
+  transform-origin: center;
+  transform: rotate(45deg);
+  &:hover{
+    border-color: $hover-color;
+  }
+}
+&::before{
+  border-width: $cross-width $cross-width 0 0;
+}
+&::after{
+  border-width: 0 0 $cross-width $cross-width;
+}
+  width:$width;
+  height:$height;
+}
